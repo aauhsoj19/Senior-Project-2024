@@ -1,0 +1,188 @@
+/* Inter Font for font-family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures that padding and border are included in the element's total width and height */
+}
+
+/* Body Styles */
+body {
+    background-color: #5D5757; /* Background color */
+    color: #FFFFFF; /* Text color */
+    font-family: "Inter", sans-serif; /* Font family */
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    padding: 20px;
+}
+
+/* Center Alignment */
+.center {
+    text-align: center; /* Center alignment */
+}
+
+/* Heading Styles */
+.heading {
+    font-size: 85px; /* Large font size for prominence */
+    text-align: center; /* Centered alignment for the heading */
+    padding: 20px 0; /* Reduced padding to bring elements closer visually */
+    margin-bottom: 0; /* Keeps heading close to the subsequent content */
+}
+
+/*Center align the paragraph text */
+.paragraph-text {
+    text-align: center;
+}
+
+/* Form Container Styles */
+.form-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center align items */
+    margin-top: 20px; /* Add margin for better spacing */
+}
+
+
+
+/* Form Styles */
+.form {
+    font-size: 20px; /* Adjusted for readability */
+    padding: 20px 0; /* Adjusted padding for consistency */
+}
+
+/* Input Styles */
+input[type='email'], input[type='password'] {
+    margin-bottom: 10px; /* Consistent bottom margin for form inputs */
+    width: auto; /* Adjust width to fit content */
+}
+
+/* Login Button Styles */
+/* Customizing the login button */
+.button-submit {
+    background-color: #B6AAAA; /* Custom button color */
+    cursor: pointer; /* Cursor style for button hover */
+    border-radius: 22px; /* Adjusted border radius */
+    margin-bottom: 10px; /* Space between the login form and the button */
+    margin-top: 20px; /* Space between the login form and the button */
+    font-size: 20px; /* Adjusted font size for readability */
+    width: auto; /* Allow button to shrink to fit content */
+    height: 38px; /* Adjusted height */
+    max-width: 100%; /* Limit maximum width to 100% of container */
+}
+
+/*Ensure higher specificity to override Bootstrap */
+.form-container .button-submit {
+    width:100%;
+}
+
+/* 'Or' Text Styles */
+.or-text {
+    text-align: center; /* Center text alignment */
+    font-size: 25px; /* Adjusted font size for clarity */
+  /*color: #A6A6FE;  Text color for better contrast */
+    margin-bottom: 10px; /* Space between the 'or' text and the Create Account link */
+}
+
+/* Create Account Link Styles */
+a.create-account {
+    text-align: center; /* Center text alignment */
+    font-size: 25px; /* Adjusted font size for clarity */
+    color: #A6A6FE; /* Text color for better contrast */
+    text-decoration: none; /* Optional: Removes underline from link */
+}
+
+/* Adding hover effect to 'Create Account' link for better user interaction */
+a.create-account:hover {
+    color: #D8D8FE; /* Lighter purple on hover for a subtle effect */
+}
+
+/* Additional styling adjustments for alignment and spacing */
+.col {
+    padding: 0; /* Removes default padding for custom alignment */
+}
+
+label {
+    display: block; /* Ensures labels are on their own line */
+    margin-bottom: 5px; /* Adds space below each label for clarity */
+}
+
+input, .button-submit {
+    width: 100%; /* Ensures form elements take full width of their container */
+    max-width: 400px; /* Limits maximum width to enhance form appearance */
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Navbar */
+
+.custom-logo {
+  max-width: 60px; /* Set the maximum width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the logo round */
+  overflow: hidden; /* Hide any overflowing content (e.g., if the logo is not a perfect circle) */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+
+/* start of classes for job */
+
+.job-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: white;
+  color: #5D5757;
+}
+
+.flex {
+  display: flex;
+}
+
+.remote > *:not(:last-child) {
+  margin-right: 25px;
+}
+
+.remote {
+  margin-right: 10px;
+}
+.field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-job-submit {
+  background-color: #3393c7; /* Custom button color */
+  padding: 0 80px 0 80px;
+  cursor: pointer; /* Cursor style for button hover */
+  border-radius: 22px; /* Adjusted border radius */
+  margin-bottom: 10px; /* Space between the login form and the button */
+  margin-top: 20px; /* Space between the login form and the button */
+  font-size: 20px; /* Adjusted font size for readability */
+  width: auto; /* Allow button to shrink to fit content */
+  height: 38px; /* Adjusted height */
+  max-width: 100%; /* Limit maximum width to 100% of container */
+}
+
+.logo {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0;
+    background-color: transparent;
+    color: transparent;
+}
+
+/* end of classes for job */
+

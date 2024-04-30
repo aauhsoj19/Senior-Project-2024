@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Recruiter Register</title>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <script>
+      function validateForm() {
+        var email = document.forms["registrationForm"]["email"].value;
+        var password = document.forms["registrationForm"]["password"].value;
+
+        // Email format validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.match(emailRegex)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+        // Password format validation
+        var passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/;
+        if (!password.match(passwordRegex)) {
+          alert("Password must be at least 8 characters long, contain 1 uppercase letter, 1 number, and 1 special character.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 style="text-align: center;"><b>Register Below!</b></h1>
+      <h1 style="text-align: center;">Recruiter Registration</h1>
+      <form name="registrationForm" onsubmit="return validateForm()" method="post" action="recruiterRegister.php" class="form"
+        style="padding-left: 10px;">
+        <div class="col">
+          <label for="fname">First Name:</label>
+          <input type="text" name="fname" placeholder="First Name" required>
+        </div>
+        <br>
+        <div class="col">
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname" placeholder="Last Name" required>
+        </div>
+        <br>
+        <div class="col">
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <br>
+        <div class="col">
+          <label for="password">Password:</label>
+          <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <br>
+        <div class="col">
+          <label for="pnumber">Phone Number:</label>
+          <input type="tel" name="pnumber" placeholder="000-000-000"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        <br>
+        <div class="col">
+          <label for="companyid">Company_ID:</label>
+          <input type="text" name="companyid" placeholder="Company ID" required>
+        </div>
+        <br>
+        <div class="center">
+          <button class="btn btn-rounded btn-primary btn-md button-submit"
+            type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Artificial J.A.M.A</title>
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link href="./applicantHome.css" rel="stylesheet" type="text/css" />
+  <style>
+    /* Add custom CSS for the Apply button */
+    .accordion {
+      margin-top: 100px; /* Adjust margin to create a gap */
+    }
+
+    .accordion-button {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .accordion-button:last-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    /* Apply button styling */
+    .accordion-apply-btn {
+      border-radius: 20px; /* Rounded border */
+      width: 200px; /* Adjust width */
+      margin: 0 auto; /* Center button */
+      display: block; /* Ensure it's a block element */
+      background-color: #B6AAAA; /* Apply button color */
+      color: #ffffff; /* Text color */
+      border-color: #B6AAAA; /* Border color */
+    }
+
+    /* Adjust checkbox and label style to ensure they display inline */
+    .dropdown-menu input[type="checkbox"],
+    .dropdown-menu label {
+      display: inline-block;
+      margin-right: 10px; /* Adjust spacing between options */
+    }
+
+    /* Adjust alignment of label with checkbox */
+    .dropdown-menu label {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom" style="background-color: #7C7474;">
+  <a class="navbar-brand" href="#">
+    <img class="custom-logo" src="../assets/logo.png" alt="Logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+      <li class="nav-item">
+        <a class="nav-link" href="applicantHome.php">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="applicantUpdate.php">Update Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="applicantReview.php">Review Application</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 me-2" method="post" action="../php/logout.php">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+    </form>
+  </div>
+</nav> <!--end of navbar-->
+
+<!-- Search Bar and Filter -->
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-6">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="filteredDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            Filter
+          </button>
+          <ul class="dropdown-menu" aria-labeledby="filterDropdown">
+            <li>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Remote" name="filter1" value="Remote">
+                Remote
+              </label>
+            </li>
+            <li>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Hybrid" name="filter2" value="Hybrid">
+                Hybrid
+              </label>
+            </li>
+            <li>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Onsite" name="filter3" value="Onsite">
+                Onsite
+              </label>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Accordion -->
+<div class="accordion" id="accordionExample">
+  <!-- Example Accordion item -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+              aria-expanded="true" aria-controls="collapse1">
+        Job Title: Artificial Intelligence Developer
+      </button>
+    </h2>
+    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1">
+      <div class="accordion-body">
+        <strong>Company Name Inc.</strong> <br>
+        Job_ID: 123456<br>
+        AI Feedback: Sample Feedback <br>
+        Application Feedback: In Progress/Accepted/Rejected
+      </div>
+      <button type="button" class="btn btn-secondary accordion-apply-btn">Review</button>
+    </div>
+  </div>
+  <!-- End Example Accordion item -->
+  <!-- You can repeat this structure for each job listing -->
+</div>
+
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

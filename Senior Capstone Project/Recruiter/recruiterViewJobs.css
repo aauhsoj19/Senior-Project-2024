@@ -1,0 +1,332 @@
+
+/* start of classes for view job */
+
+.view-jobs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+    color: #5D5757;
+  }
+  
+  .add-job-button {
+    display: flex;
+    justify-content: end;
+    padding: 0px 35px;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  .add-job-button > button {
+    background-color: #7E99A9;
+    width: 250px;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    left: 0;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  .view-jobs-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 30px;
+    margin: 1px 0px;
+  
+  }
+  
+  .view-jobs-row > p {
+    margin: auto 0px;
+    font-size: large;
+    font-weight: 600;
+  }
+  
+  .button-div {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+  }
+  
+  .review-button {
+    background-color: #5D5757;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 20px;
+    margin: 0px 5px;
+    border: none;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  .update-button {
+    background-color: #B6AAAA;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 20px;
+    margin: 0px 5px;
+    border: none;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  .close-button {
+    background-color: #F47474;
+    color: white;
+    padding: 2px 20px;
+    border-radius: 20px;
+    margin: 0px 5px;
+    border: none;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  /* end of classes for view job */
+
+  /* start of classes for review resume */
+
+.review-resume {
+  display: flex;
+  flex-direction: column;
+  color: #5D5757;
+}
+
+.job-title-section, .applicant-info_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 30px 0px;
+  padding: 20px;
+}
+
+.applicant-section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 50px;
+  background-color: white;
+  padding: 20px 0;
+  height: auto;
+}
+
+.applicant-section-header {
+  display: flex;
+  justify-content: start;
+}
+
+.applicant-section-header > h4 {
+  font-weight: bold;
+  margin: 10px 0 0 10px;
+}
+
+.applicant-section > hr {
+  height: 2px;
+  background-color: #5D5757;
+}
+
+.applicant-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.applicant-details {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.resume > p {
+  display: flex;
+}
+
+.resume > button {
+  color: white;
+  background-color: #B6AAAA;
+  padding: 0 12px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer; /* Cursor style for button hover */
+}
+
+.applicant-row-buttons{
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  cursor: pointer; /* Cursor style for button hover */
+}
+
+.accept-button {
+  background-color: #B6AAAA;
+  color: white;
+  padding: 2px 15px;
+  border-radius: 20px;
+  margin: 0px 5px;
+  border: none;
+  cursor: pointer; /* Cursor style for button hover */
+}
+
+.reject-button {
+  background-color: #F47474;
+  color: white;
+  padding: 2px 20px;
+  border-radius: 20px;
+  margin: 0px 5px;
+  border: none;
+  cursor: pointer; /* Cursor style for button hover */
+}
+
+.view-accepted-applicants, .go-back-review-applicant {
+  display: flex;
+  justify-content: center;
+}
+
+.view-accepted-applicants-button, .go-back-review-applicant-button {
+  background-color: #B6AAAA;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  width: 200px;
+  padding: 3px 25px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer; /* Cursor style for button hover */
+}
+
+.accepted-section-header {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding: 0px 20px;
+}
+
+.accepted-section-header > h4 {
+  font-weight: bold;
+}
+/* end of classes for view review resume */
+
+/* start of classes for review resume */
+
+.review-resume {
+    display: flex;
+    flex-direction: column;
+    color: #5D5757;
+  }
+  
+  .job-title-section, .applicant-info_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 30px 0px;
+    padding: 20px;
+  }
+  
+  .applicant-section {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 50px;
+    background-color: white;
+    padding: 20px 0;
+    height: auto;
+  }
+  
+  .applicant-section-header {
+    display: flex;
+    justify-content: start;
+  }
+  
+  .applicant-section-header > h4 {
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+  }
+  
+  .applicant-section > hr {
+    height: 2px;
+    background-color: #5D5757;
+  }
+  
+  .applicant-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  
+  .applicant-details {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .resume > p {
+    display: flex;
+  }
+  
+  .resume > button {
+    color: white;
+    background-color: #B6AAAA;
+    padding: 0 12px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  .applicant-row-buttons{
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  .accept-button {
+    background-color: #B6AAAA;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 20px;
+    margin: 0px 5px;
+    border: none;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  .reject-button {
+    background-color: #F47474;
+    color: white;
+    padding: 2px 20px;
+    border-radius: 20px;
+    margin: 0px 5px;
+    border: none;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  .view-accepted-applicants, .go-back-review-applicant {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .view-accepted-applicants-button, .go-back-review-applicant-button {
+    background-color: #B6AAAA;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    padding: 3px 25px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer; /* Cursor style for button hover */
+  }
+  
+  .accepted-section-header {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 0px 20px;
+  }
+  
+  .accepted-section-header > h4 {
+    font-weight: bold;
+  }
+  /* end of classes for view review resume */
